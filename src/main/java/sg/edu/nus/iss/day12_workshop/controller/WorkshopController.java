@@ -22,12 +22,13 @@ public class WorkshopController {
     @PostMapping("/processNumber")
     public String processNumber(@RequestParam(name="inputNumber",defaultValue = "1")Integer unit, Model model){
         List<Integer> listIntegers = new ArrayList<Integer>();
+
         Integer loopValue = unit;
         Integer currentValue = 1;
 
         while(currentValue <= loopValue){
            int result = (int) (Math.random() * loopValue) + 1;
-           if(listIntegers.contains(Integer.valueOf(result))){
+           if(!listIntegers.contains(Integer.valueOf(result))){
             listIntegers.add(Integer.valueOf(result));
             currentValue++;
            }

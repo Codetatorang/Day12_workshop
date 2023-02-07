@@ -10,7 +10,7 @@
     <table>
         <tr data-th-each="i:${numbers}">
             <td>
-                <img th:src="@{${'images/' + i + '.jpg'}}" width="200" height="200" alt="">
+                <img th:src="@{${'/images/' + i + '.jpg'}}" width="200" height="200" alt="">
             </td>
         </tr>
     </table>
