@@ -12,7 +12,8 @@
 	<artifactId>day12_workshop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>day12_workshop</name>
-	<description>Day q2w workshop project for Spring Boot</description>
+	<description>Day 02 workshop project for Spring Boot</description>
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>19</java.version>
 	</properties>
